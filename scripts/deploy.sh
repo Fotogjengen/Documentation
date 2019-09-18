@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
 echo "deploy"
-cd /var/www/hilfling/hilfling-server && git pull
+cd /var/www/hilfling-server && git pull
