@@ -12,6 +12,6 @@ before_install:
 - echo -e "Host $SERVER_IP_ADDRESS\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 - ssh-add ./deploy_key
 script:
-  - bash echo "script works"
+  - bash scripts/test.sh
 after_success:
-  - bash echo "success"
+  - bash scripts/deploy.sh
